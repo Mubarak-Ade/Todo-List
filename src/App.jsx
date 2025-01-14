@@ -104,7 +104,7 @@ function App() {
 				transition={{
 					duration: 1,
 				}}
-				src="../src/assets/trash-open.png" className="absolute top-0 right-0 size-20 " alt="" />
+				src="./assets/trash-open.png" className="absolute top-0 right-0 size-20 " alt="" />
 				<motion.img 
 				initial={{opacity: 0}}
 				animate={isDeleting ? { 
@@ -114,7 +114,7 @@ function App() {
 				transition={{
 					duration: 1,
 				}}
-				src="../src/assets/trash-close.png" className="absolute top-7 right-5 size-12" alt="" />
+				src="./assets/trash-close.png" className="absolute top-7 right-5 size-12" alt="" />
 			</div>
 		</div>
 	)
