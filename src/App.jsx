@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react"
 import Input from "./components/Input"
 import List from "./components/List"
 import Navbar from "./components/navbar";
+import TrashOpen from './assets/trashOpen.png'
+import TrashClose from './assets/trashClose.png'
 import { useAnimate, motion, useInView, AnimatePresence, } from "framer-motion";
 
 function App() {
@@ -104,7 +106,7 @@ function App() {
 				transition={{
 					duration: 1,
 				}}
-				src="./assets/trash-open.png" className="absolute top-0 right-0 size-20 " alt="" />
+				src={TrashOpen} className="absolute top-0 right-0 size-20 " alt="" />
 				<motion.img 
 				initial={{opacity: 0}}
 				animate={isDeleting ? { 
@@ -114,7 +116,7 @@ function App() {
 				transition={{
 					duration: 1,
 				}}
-				src="./assets/trash-close.png" className="absolute top-7 right-5 size-12" alt="" />
+				src={TrashClose} className="absolute top-7 right-5 size-12" alt="" />
 			</div>
 		</div>
 	)
