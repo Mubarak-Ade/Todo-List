@@ -2,12 +2,11 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 
-function Navbar({list}) {
-  const listCon = list.length === 0 ? 'text-red-600' : 'text-green-600'
+function Navbar() {
+  // const listCon = list.length === 0 ? 'text-green-600' : 'text-blue-600'
   return (
-    <div className='h-24 bg-stone-500 items-center flex p-4 justify-between font-sans'>
-        <h1 className='text-4xl text-white'>Navbar</h1>
-        <p className={`text-3xl font-mono ${listCon} bg-amber-100 p-2 bg-opacity-2 rounded-xl`}>{list.length}</p>
+    <div className='flex justify-center items-center text-center bg-stone-500 p-4 h-24 font-sans'>
+        <h1 className='text-4xl text-white'>Todo List</h1>
     </div>
   )
 }
